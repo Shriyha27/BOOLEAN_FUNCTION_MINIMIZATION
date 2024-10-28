@@ -16,6 +16,9 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
+![WhatsApp Image 2024-10-28 at 14 26 37_c47d1597](https://github.com/user-attachments/assets/1bfc1b12-3df1-47c5-a6f9-798d3aee510a)
+
+
 **Logic Diagram**
 
 **Procedure**
@@ -33,18 +36,32 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
+module EXP_3_1(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b&~d)|(~a&b&d)|(a&b&~c));
+endmodule
+module EXP_3_2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y&z)|(x&y)|(w&y));
+endmodule
+
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: RegisterNumber:24007606
 
-
-**RTL realization**
 
 **Output:**
 
-**RTL**
+**RTL** ![EXP_3_1](https://github.com/user-attachments/assets/33482617-a682-4fc3-a4da-7c93ec798c99)
+![EXP_3_2](https://github.com/user-attachments/assets/75ae99ba-182a-4e6e-afcc-f1983618693b)
 
-**Timing Diagram**
+
+
+**Timing Diagram** ![Waveform3_1](https://github.com/user-attachments/assets/9b68edb2-d7aa-4746-9606-4fca283e5d56)
+![Waveform3_2](https://github.com/user-attachments/assets/7d95c9a3-6d15-4897-b4f3-79863738160c)
+
 
 **Result:**
 
